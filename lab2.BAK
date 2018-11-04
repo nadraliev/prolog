@@ -1,0 +1,6 @@
+predicates
+volume(real,real,real, real)
+clauses
+volume(x,y,z, r) :- r=x*y*z.
+goal
+volume(1.0, 2.0, 3.0, X).

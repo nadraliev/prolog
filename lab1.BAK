@@ -1,0 +1,17 @@
+domains
+    instrument = symbol
+    name = symbol
+predicates
+    nondeterm musician(name, instrument)
+    nondeterm find_alto()
+clauses
+    musician(monkey, violin).
+    musician(donkey, alto).
+    musician(goat, cello).
+    musician(bear, counterbass).
+find_alto() if musician(X, alto),
+write("shit", X),
+nl, fail.
+find_alto().
+goal
+    find_alto().
