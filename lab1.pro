@@ -19,7 +19,8 @@ clauses
     write(X),
     nl, fail.
     monkey_instrument().
-    is_kvartet() :- musician(monkey, violin), musician(donkey, alto), musician(goat, cello), musician(bear, counterbass);
+    is_kvartet() :- 
+    musician(monkey, violin), musician(donkey, alto), musician(goat, cello), musician(bear, counterbass);
     musician(monkey, violin), musician(donkey, alto), musician(goat, counterbass), musician(bear, cello);
     musician(monkey, violin), musician(donkey, cello), musician(goat, violin), musician(bear, counterbass);
     musician(monkey, violin), musician(donkey, cello), musician(goat, counterbass), musician(bear, violin);
@@ -44,7 +45,7 @@ clauses
     musician(monkey, counterbass), musician(donkey, alto), musician(goat, cello), musician(bear, violin);
     musician(monkey, counterbass), musician(donkey, alto), musician(goat, violin), musician(bear, cello).
 goal
-    find_alto().
-    monkey_instrument().
+    find_alto(),
+    monkey_instrument(),
     is_kvartet().
     
